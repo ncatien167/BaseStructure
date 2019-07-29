@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fmC-4F-2ZR">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="NLG-8W-ADN">
+            <objects>
+                <viewController id="fmC-4F-2ZR" customClass="HomeVC" customModule="CuuHo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iSf-5b-z3e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f0c-Ua-be2">
+                                <rect key="frame" x="20" y="79" width="374" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f0c-Ua-be2" firstAttribute="leading" secondItem="OB8-55-kng" secondAttribute="leading" constant="20" id="4xT-Ki-T8P"/>
+                            <constraint firstItem="OB8-55-kng" firstAttribute="trailing" secondItem="f0c-Ua-be2" secondAttribute="trailing" constant="20" id="Jll-BM-aVC"/>
+                            <constraint firstItem="f0c-Ua-be2" firstAttribute="top" secondItem="OB8-55-kng" secondAttribute="top" constant="35" id="tCX-A3-hf8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OB8-55-kng"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="f0c-Ua-be2" id="cZ1-0b-DeG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="veo-uu-zan" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="210"/>
+        </scene>
+    </scenes>
+</document>
